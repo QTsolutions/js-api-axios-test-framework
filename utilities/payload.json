@@ -1,0 +1,14 @@
+{
+  "postPayload": {
+    "name": "morpheus",
+    "job": "leader"
+  },
+  "putPayload": {
+    "name": "morpheus",
+    "job": "zion resident"
+  },
+  "patchPayload": {
+    "name": "morpheus",
+    "job": "indian resident"
+  }
+}

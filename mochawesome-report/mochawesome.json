@@ -1,0 +1,195 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-08-28T14:03:48.672Z",
+    "end": "2023-08-28T14:03:51.260Z",
+    "duration": 2588,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "f0d9a5e0-f724-4ccf-ad6b-94d1739e756f",
+      "title": "",
+      "fullFile": "C:\\Users\\kumar\\OneDrive\\Desktop\\AxiosAutomationDemo\\api_tests\\apiReq.spec.js",
+      "file": "\\api_tests\\apiReq.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a45b9d21-a6bc-408f-b1fe-f4147d5e03e2",
+          "title": "API requests",
+          "fullFile": "C:\\Users\\kumar\\OneDrive\\Desktop\\AxiosAutomationDemo\\api_tests\\apiReq.spec.js",
+          "file": "\\api_tests\\apiReq.spec.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook in \"API requests\"",
+              "fullTitle": "API requests \"before all\" hook in \"API requests\"",
+              "timedOut": false,
+              "duration": 2,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "utilityFunction = new UtilitiesFunction();",
+              "err": {},
+              "uuid": "41a30d3e-fdc7-4d17-8c12-cef2f17de324",
+              "parentUUID": "a45b9d21-a6bc-408f-b1fe-f4147d5e03e2",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "@test get API request",
+              "fullTitle": "API requests @test get API request",
+              "timedOut": false,
+              "duration": 290,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const resGet = await utilityFunction.getRequest(\n  property.get(\"getEndpoint\")\n);\nconsole.log(\"get request response \", await resGet.data);\nexpect(resGet.status).equal(200);",
+              "err": {},
+              "uuid": "e305e3e2-5023-4041-bfc7-56acbf158b4a",
+              "parentUUID": "a45b9d21-a6bc-408f-b1fe-f4147d5e03e2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "@test post API request",
+              "fullTitle": "API requests @test post API request",
+              "timedOut": false,
+              "duration": 720,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const resPost = await utilityFunction.postRequest(\n  property.get(\"postEndpoint\")\n);\nconsole.log(\"post request response \", await resPost.data);\nexpect(resPost.status).equal(201);",
+              "err": {},
+              "uuid": "d44de927-be7c-4712-9ab0-af82611ebf44",
+              "parentUUID": "a45b9d21-a6bc-408f-b1fe-f4147d5e03e2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "put API request",
+              "fullTitle": "API requests put API request",
+              "timedOut": false,
+              "duration": 463,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const resPut = await utilityFunction.putRequest(\n  property.get(\"putEndpoint\")\n);\nconsole.log(\"put request response \", await resPut.data);\nexpect(resPut.status).equal(200);",
+              "err": {},
+              "uuid": "ce7efdd7-cd5a-434f-9d82-5f0d25e2c4e0",
+              "parentUUID": "a45b9d21-a6bc-408f-b1fe-f4147d5e03e2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "patch API request",
+              "fullTitle": "API requests patch API request",
+              "timedOut": false,
+              "duration": 661,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const resPatch = await utilityFunction.patchRequest(\n  property.get(\"patchEndpoint\")\n);\nconsole.log(\"patch request response \", await resPatch.data);\nexpect(resPatch.status).equal(200);",
+              "err": {},
+              "uuid": "00fb459a-d3d8-4aa8-ad7a-32cf967facda",
+              "parentUUID": "a45b9d21-a6bc-408f-b1fe-f4147d5e03e2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "delete API request",
+              "fullTitle": "API requests delete API request",
+              "timedOut": false,
+              "duration": 435,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const resDelete = await utilityFunction.deleteRequest(\n  property.get(\"deleteEndpoint\")\n);\nconsole.log(\"delete request response \", await resDelete.data);\nexpect(resDelete.status).equal(204);",
+              "err": {},
+              "uuid": "3579c7e3-7bbd-44ee-9fd9-5209adc829aa",
+              "parentUUID": "a45b9d21-a6bc-408f-b1fe-f4147d5e03e2",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "e305e3e2-5023-4041-bfc7-56acbf158b4a",
+            "d44de927-be7c-4712-9ab0-af82611ebf44",
+            "ce7efdd7-cd5a-434f-9d82-5f0d25e2c4e0",
+            "00fb459a-d3d8-4aa8-ad7a-32cf967facda",
+            "3579c7e3-7bbd-44ee-9fd9-5209adc829aa"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2569,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "10.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}
