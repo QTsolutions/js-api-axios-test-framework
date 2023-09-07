@@ -1,0 +1,19 @@
+{
+  "dataZero": {
+    "id": 7,
+    "email": "michael.lawson@reqres.in",
+    "first_name": "Michael",
+    "last_name": "Lawson",
+    "avatar": "https://reqres.in/img/faces/7-image.jpg"
+  },
+  "expectedKeys": [
+    "page",
+    "per_page",
+    "data",
+    "per_page",
+    "support",
+    "total",
+    "total_pages"
+  ],
+  "innerArray": ["id", "email", "first_name", "last_name", "avatar"]
+}
