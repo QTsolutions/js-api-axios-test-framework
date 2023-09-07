@@ -46,7 +46,6 @@ describe("API requests", () => {
   });
 
   it("@test post API request", async () => {
-    const currentDate = new Date();
     const resPost = await utilityFunction.postRequest(
       property.get("postEndpoint")
     );
